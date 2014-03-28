@@ -61,16 +61,13 @@
         btn1.layer.cornerRadius = 5;
         [btn1 addTarget:self action:@selector(toggleBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:btn1];
-        
     }
-    
-    
 }
 
 - (void)toggleBtnPressed:(id)sender
 {
     UIButton *btn = sender;
-    int tag = btn.tag;
+    int tag = (int)btn.tag;
     
     __weak ImplicitAnimationsViewController *weakSelf = self;
     [CATransaction setDisableActions:self.disableAction];

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface BezierPathView : UIView
-
+- (CGPathRef)bezierPath;
 @end

@@ -20,7 +20,7 @@
     RootVC *vc = [[RootVC alloc] initWithStyle:UITableViewStyleGrouped];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
-    
+    /*text*/
     [self.window makeKeyAndVisible];
     return YES;
 }
